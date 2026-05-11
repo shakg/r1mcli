@@ -6,6 +6,22 @@ A command-line utility for switching video resolution on R1M IP cameras.
 
 `r1mcli` connects to an R1M IP camera over TCP and sends a binary packet that toggles the camera's video output between **720p** and **1080p**. It communicates using a raw, undocumented protocol — no ONVIF or RTSP involved.
 
+## Quick Start
+
+Download the latest binary (as of today its v0.0.1), run it.
+
+```bash
+curl -LO https://github.com/shakg/r1mcli/releases/download/v0.0.1/r1mcli
+```
+
+```bash
+sudo chmod +x r1mcli
+```
+
+```bash
+./r1mcli
+```
+
 ## Features
 
 - Switch resolution between 720p and 1080p with a single command
