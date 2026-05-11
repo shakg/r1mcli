@@ -22,12 +22,10 @@ const (
 
 	// Known packet:
 	// HD -> FHD, assumed 720 -> 1080.
-	packetSet1080Hex = "5566aabb0109000000d70084a31fec99010280073804001e1ec6195e42"
-
-	// TODO: Replace this with the real FHD -> HD packet.
-	// Example:
-	// packetSet720Hex = "..."
-	packetSet720Hex = ""
+	packetSet1080Hex = "5566aabb0109000000d70084a31fec99010280073804001e1ec6195e42" 
+	
+	// FHD -> HD, 1080p -> 720p.
+	packetSet720Hex = "5566aabb0109000000d900848990fa9301020005d002001e1e9df45edd"
 )
 
 type Config struct {
